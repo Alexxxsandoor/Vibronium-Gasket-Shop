@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<title>Vibronium</title>
+</head>
+
+<body>
+	<div class="ty-list">
+	<h1>Ваш заказ принят!</h1>
+	<p>Благодарим за оказанное доверие :)</p>
+</div>
+	<header>
+	<div class="left-block">
+		<img src="img/icon.png" alt="icon">
+		<span>Vibronium</span>
+	</div>
+	<div class="right-block">
+		<div class="navigation">
+			<a href="#product">О продукте</a>
+			<a href="#solution">Решение</a>
+			<a href="#reviews">Отзывы</a>
+		</div>
+		<div class="basket">
+			<img src="img/basket.png" alt="icon-basket"><a onclick="userInfo(1)">Заказать</a>
+		</div>
+	</div>
+	<a onclick="menuList(1)" class="right-block-mobile">MENU</a>
+</header>
+<div class="menu-list">
+	<a id="close" onclick="menuList(0)">CLOSE</a>
+	<p>
+		<a href="#product" onclick="menuList(0)">О продукте</a>
+		<a href="#solution" onclick="menuList(0)">Решение</a>
+		<a href="#solution" onclick="menuList(0)">Отзывы</a>
+	</p>
+
+	<button onclick="menuList(0),userInfo(1)">Заказать</button>
+</div>
+	<div class="cover">
+	<div class="container">
+		<div class="container__cover-block">
+			<div class="left-title">
+				<p>Бытовая техника должна </p>
+				<p><span>помогать,</span></p>
+				<p>а не напрягать!</p>
+				<button onclick="userInfo(1)">Заказать</button>
+			</div>
+			<div class="right-image">
+				<img src="img/washer.png" alt="washer">
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="about-product">
+	<div class="container">
+		<div class="about-product__content">
+			<div class="left-pictures">
+				<img src="img/protection.png" alt="protection">
+				<p>Стиральная машина <span>“пляшет”</span><br> во время отжима?</p>
+				<img src="img/speaker.png" alt="speaker">
+				<p>А может ей нужен срочный <span>ремонт?</span></p>
+			</div>
+			<div class="right-pictures">
+				<img src="img/Beach.png" alt="Beach">
+				<p>Есть ощущение, что она первая <br><span>полетит</span> в бессрочный отпуск?</p>
+				<img src="img/phone.png" alt="Beach">
+				<p>Машина стирает, а соседи<br> думают, что у тебя ремонт <br>и <span>просят потише?</span></p>
+			</div>
+		</div>
+		<div class="about-product__content-mobile">
+			<div class="images-margin">
+				<img src="img/protection-m.png" alt="protection">
+				<p>Стиральная машина <span>“пляшет”</span><br> во время отжима?</p>
+				<img src="img/speaker-m.png" alt="speaker">
+				<p>А может ей нужен срочный <span>ремонт?</span></p>
+				<img src="img/Beach-m.png" alt="Beach">
+				<p>Есть ощущение, что она первая <br><span>полетит</span> в бессрочный отпуск?</p>
+				<img src="img/phone-m.png" alt="Beach">
+				<p>Машина стирает, а соседи<br> думают, что у тебя ремонт <br>и <span>просят потише?</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="solution" class="solution">
+	<div class="solution-desktop">
+		<div class="container">
+			<div class="solution-title">
+				<h1>Решение <span>существует</span></h1>
+				<p>Антивибрационная амортизирующая подкладка</p>
+			</div>
+			<div class="solution-content">
+				<div class="left-block">
+					<img src="img/repair.png" alt="repair">
+					<p>Устанавливается самостоятельно
+						без инструментов
+						и клеев</p>
+				</div>
+				<div class="center-block">
+					<img src="img/gaskets.png" alt="gaskets">
+					<button onclick="userInfo(1)">Заказать</button>
+					<img src="img/garden.png" alt="garden">
+					<p>Нескользящая, из экологически
+						чистого материала</p>
+				</div>
+				<div class="right-block">
+					<img src="img/yoga.png" alt="yoga">
+					<p>Уютная атмосфера
+						в доме</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="solution-mobile">
+		<div class="container">
+			<div class="title">
+				<h3>Решение
+					<span>существует</span>
+				</h3>
+				<p>Антивибрационная
+					амортизирующая подкладка
+				</p>
+			</div>
+			<div class="content">
+				<div class="block">
+					<img src="img/repair-m.png" alt="repair">
+					<p>Устанавливается самостоятельно
+						без инструментов и клеев</p>
+				</div>
+				<button onclick="userInfo(1)">Заказать</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="company">
+	<div class="container">
+		<div class="title">
+			<h1>Почему стоит выбрать
+				<span>нашу</span> компанию?
+			</h1>
+		</div>
+		<div class="content">
+			<p>
+			<h1>01</h1>
+			10 лет
+			<br>на рынке
+			</p>
+			<p>
+			<h1>02</h1>
+			Консультация
+			<br>перед продажей
+			</p>
+			<p>
+			<h1>03</h1>
+			Быстрая
+			<br>обработка заказа
+			</p>
+			<p>
+			<h1>04</h1>
+			Доставка
+			</p>
+		</div>
+		<div class="title-mobile">
+			<h3>Почему стоит выбрать
+				<span>нашу</span> компанию?
+			</h3>
+		</div>
+		<div class="content-mobile">
+			<p>
+			<h1>01</h1>
+			10 лет
+			<br>на рынке
+			</p>
+			<p>
+			<h1>02</h1>
+			Консультация
+			<br>перед продажей
+			</p>
+			<p>
+			<h1>03</h1>
+			Быстрая
+			<br>обработка заказа
+			</p>
+			<p>
+			<h1>04</h1>
+			Доставка
+			</p>
+		</div>
+
+	</div>
+
+</div>
+	<div id="product" class="product">
+	<div class="container">
+		<div class="title">
+			<h1>
+				Почему стоит выбрать <span>наш</span> продукт?
+			</h1>
+		</div>
+		<div class="content">
+			<div class="left">
+				<p>Экологически
+					чистый материал</p>
+				<p>Универсальный
+					размер</p>
+			</div>
+			<div class="center"><img src="img/gaskets2.png" alt="icon-basket"></div>
+			<div class="right">
+				<p>Подходит для
+					мебели и другой
+					техники</p>
+				<p>Простота установки</p>
+			</div>
+		</div>
+		<div class="mobile">
+			<h3>Почему стоит
+				выбрать
+				<span>наш</span> продукт?
+			</h3>
+			<img src="img/gaskets2-m.png" alt="icon-basket">
+			<p>Экологически чистый материал</p>
+			<p>Подходит для мебели
+				и другой техники.</p>
+			<p>Универсальный размер</p>
+			<p>Простота установки</p>
+		</div>
+	</div>
+</div>
+	<div id="reviews" class="reviews">
+	<div class="container">
+		<div class="title">
+			<h1>Наши <span>клиенты</span>
+				скажут все за нас</h1>
+		</div>
+		<!-- <div class="content swiper-container">
+			<div class="swiper-wrapper">
+				<div class="reviews-block swiper-slide">
+					<h3><span>“</span></h3>
+					<h2>Александра</h2>
+					<p>⭐⭐⭐⭐</p>
+					<p>
+						Накладки соответствуют описанию,
+						купила второй комплект для родителей,
+						первый стоит под моей машинкой,
+						нареканий не заметила, машинка стоит устойчиво.
+						Спасибо большое продавцу за доставку.</p>
+				</div>
+				<div class="reviews-block swiper-slide">
+					<h3><span>“</span></h3>
+					<h2>Лжедмитрий</h2>
+					<p>⭐⭐</p>
+					<p>
+						Посылка пришла достаточно быстро, что не может не радовать!!! Товар отличного качества и полностью
+						соответствует картинке продавца, очень нравится. Спасибо огромное продавцу и удачи в бизнесе!!!</p>
+				</div>
+				<div class="reviews-block swiper-slide">
+					<h3><span>“</span></h3>
+					<h2>Виктор</h2>
+					<p>⭐⭐⭐⭐⭐</p>
+					<p>
+						Это, конечно, не коврик, но попытки сбежать у старенькой стиралки уменьшились (при одинаковой
+						загрузке).
+						Раскачивается на уголках, но не убегает. Вряд ли удержит стиралку с двухспальным пододеяльником - еще
+						не
+						пробовала. </p>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="content">
+
+			<div class="reviews-block">
+				<h3><span>“</span></h3>
+				<h2>Александра</h2>
+				<p>⭐⭐⭐⭐</p>
+				<p>
+					Накладки соответствуют описанию,
+					купила второй комплект для родителей,
+					первый стоит под моей машинкой,
+					нареканий не заметила, машинка стоит устойчиво.
+					Спасибо большое продавцу за доставку.</p>
+			</div>
+
+
+		</div>
+		<button onclick="userInfo(1)">Заказать</button>
+	</div>
+</div>
+	<div class="contact-list">
+	<form>
+		<h2>Укажите контактные данные и адрес отделения почты:</h2>
+
+
+		<div class="user-name">
+			<p>
+				<input type="text" placeholder="Пилип" id="name">
+				<label for="name">Имя</label>
+			</p>
+			<p>
+				<input type="text" placeholder="Орлик" id="last">
+				<label for="last">Фамилия</label>
+			</p>
+		</div>
+
+		<p>
+			<input type="tel" placeholder="+380 (67) 547 - 22 - 22" id="tel">
+			<label for="tel">Номер телефона</label>
+		</p>
+		<p>
+			<input type="email" placeholder="На этот адрес почты придет информация о заказе." id="email">
+			<label for="email">E-mail (Опционально)</label>
+		</p>
+		<p class="radio">
+			<input class="rd-p" type="radio" id="new-p" name="rb1" value="0">Новая почта
+			<input class="rd-p" type="radio" id="ukr-p" name="rb1" value="1">Укр. почта
+		</p>
+		<p>
+			<input type="text" placeholder="Номер отделения или адрес" id="address">
+			<label for="address">Город</label>
+		</p>
+		<p>
+			<input type="text" placeholder="Комментарий к заказу" id="commit">
+			<label for="commit">Комментарий (Опционально)</label>
+		</p>
+		<p class="checkbox">
+			<input class="call" type="checkbox" id="checkbox">Я уверен в заказе, не перезванивайте мне.
+		</p>
+		<p>
+			<input onclick="sendInfo()" type="button" value="Отправить заказ">
+		</p>
+		<p>
+			<input id="stop" type="button" onclick="userInfo(0)" value="Отмена">
+		</p>
+	</form>
+</div>
+	<footer>
+	<a class="icon"><img src="img/icon.png" alt="icon"><span>Vibronium</span></a>
+	<a>+380 567 44 55</a>
+	<a>domain@domain.com</a>
+	<a href="#product">О продукте</a>
+	<a href="#solution">Решение</a>
+	<a href="#reviews">Отзывы</a>
+</footer>
+	<script src="js/app.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		new Swiper('.content', {
+			slidesPerview: 1,
+		});
+
+		//всплывающее окно для информации пользователя
+		function userInfo(type) {
+			const window = document.querySelector(".contact-list")
+			if (type === 1) window.style.display = "flex";
+			if (type === 0) window.style.display = "none";
+		}
+
+		//меню лист для мобильной версии
+		function menuList(type) {
+			const header = document.querySelector("header")
+			const menu = document.querySelector(".menu-list")
+			if (type === 1) {
+				menu.style.display = "flex";
+				header.style.display = "none";
+			}
+			if (type === 0) {
+				menu.style.display = "none";
+				header.style.display = "flex";
+			}
+			userInfo(0)
+		}
+
+		//Отправка данных и всплывающее сообщение благодарности 
+		function sendInfo() {
+
+
+
+			//Отправка данных
+			const name = document.querySelector("#name").value
+			const lastName = document.querySelector("#last").value
+			const telefpone = document.querySelector("#tel").value
+			const email = document.querySelector("#email").value
+			const address = document.querySelector("#address").value
+			const commit = document.querySelector("#commit").value
+			const checkbox = document.querySelector(".call").checked
+			const radio = document.querySelectorAll(".rd-p")
+			for (let i = 0; i < radio.length; i++) {
+				if (radio[i].checked) {
+					const data = radio[i].value
+					const arr = {
+						name: name,
+						lastName: lastName,
+						telefpone: telefpone,
+						email: email,
+						address: address,
+						commit: commit,
+						checkbox: checkbox,
+						mail: data,
+					}
+					console.log(arr)//получение массива в консоле
+				}
+			}
+
+			//всплывающее сообщение благодарности 
+			const tyList = document.querySelector(".ty-list")
+			userInfo(0)
+			tyList.style.display = "flex";
+			setTimeout(() => {
+				tyList.style.display = "none";
+			}, 7000);
+		}
+
+
+		//скролл
+		const anchors = document.querySelectorAll('a[href*="#"]')
+
+		for (let anchor of anchors) {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault()
+
+				const blockID = anchor.getAttribute('href').substr(1)
+
+				document.getElementById(blockID).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				})
+			})
+		}
+	</script>
+</body>
+
+</html>
